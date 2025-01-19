@@ -1,0 +1,102 @@
+body {
+    background-color: white;
+    color:  rgb(15, 20, 25);
+}
+
+h4 {
+    color: rgb(15, 20, 25);
+}
+
+h5 {
+    color: rgb(83, 100, 113);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: rgb(15, 20, 25);
+    text-decoration: none;
+}
+
+img {
+    border-radius: 50%;
+}
+
+article span {
+    color: rgb(83, 100, 113);
+}
+
+.bio {
+    color: rgb(15, 20, 25);
+}
+
+.infos a {
+    color: rgb(83, 100, 113);
+}
+.navegacao li a:hover,
+.pub a:hover {
+    background-color: rgba(15, 25, 20, 0.1);
+    border-radius: 10px;
+}
+
+.estatisticas:hover {
+    text-decoration: underline;
+}
+
+.estatisticas a {   
+    color: rgb(83, 100, 113);
+    font-weight: normal;    
+}
+
+.estatisticas span {
+    color: rgb(15, 20, 25);
+    font-weight: bold;
+}
+
+.acoes a {
+    color: rgb(83, 100, 113);
+    border-radius: 10px;
+}
+
+.acoes .reply:hover, 
+.acoes .share:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+    color:   rgba(29, 155, 240, 1);
+}
+
+.acoes .retzeet:hover {
+    background-color: rgba(0, 186, 124, 0.1);
+    color:  rgba(0, 186, 124, 1);
+}
+
+.acoes .like:hover {
+    background-color: rgba(249, 24, 128, 0.1);
+    color:  rgba(249, 24, 128, 1);
+}
+
+.user {
+    color: rgb(15, 20, 25);
+}
+
+#tzeet {
+    color: rgb(15, 20, 25);
+}
+
+#tzeet:hover {
+    background: rgb(0, 0, 0, 0.03);
+}
+
+.navegacao {
+    padding: 0px;
+}
+
+#b_tzeet {
+    all: unset;
+    background-color: #1266F8;
+    color: white;
+    border-radius: 50px;
+    padding: 5px 30px;
+}
+
