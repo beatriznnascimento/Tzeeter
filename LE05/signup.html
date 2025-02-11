@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tzeet - Criar Conta</title>
+  <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Criar conta</h1>
+
+    <!-- Cadastro -->
+    <form id="signupForm" class="form">
+
+      <!-- nome -->
+      <div class="input-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <span id="nomeError" class="error-message">Por favor, informe um nome de usuário.</span>
+      </div>
+
+      <!-- email -->
+      <div class="input-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span id="emailError" class="error-message">Informe um email válido.</span>
+      </div>
+
+      <!-- senha -->
+      <div class="input-group">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required minlength="6">
+        <span id="senhaError" class="error-message">A senha é obrigatória e deve ter pelo menos 6 caracteres.</span>
+      </div>
+
+      <!-- confirmação de senha -->
+      <div class="input-group">
+        <label for="confirmarSenha">Confirmação da senha:</label>
+        <input type="password" id="confirmarSenha" name="confirmarSenha" required>
+        <span id="confirmarSenhaError" class="error-message">As senhas não coincidem.</span>
+      </div>
+
+      <!-- data de Nascimento -->
+      <div class="input-group">
+        <h2>Data de nascimento</h2>
+        <p>Isso não será exibido publicamente. Confirme sua própria idade, mesmo se esta conta for de empresa, de um animal de estimação ou outros.</p>
+        <div class="date-group">
+          <select id="mes" name="mes" required>
+            <option value="">Mês</option>
+          
+          </select>
+          <select id="dia" name="dia" required>
+            <option value="">Dia</option>
+            
+          </select>
+          <select id="ano" name="ano" required>
+            <option value="">Ano</option>
+        
+          </select>
+        </div>
+        <span id="dataError" class="error-message">Campo obrigatório.</span>
+      </div>
+
+      <!-- aceita emails -->
+      <div class="input-check">
+        <label>
+          <input type="checkbox" id="receberEmails" name="receberEmails">
+          Receba e-mails sobre sua atividade no Tzeet e recomendações.
+        </label>
+      </div>
+
+      <!-- aceita politicas -->
+      <div class="input-radio">
+        <p>Você concorda com nossos <a href="#">Termos</a>, com a <a href="#">Política de Privacidade</a> e com o <a href="#">Uso de Cookies</a>?</p>
+        <label>
+          <input type="radio" id="concordaSim" name="concorda" value="sim" required>
+          Sim
+        </label>
+        <label>
+          <input type="radio" id="concordaNao" name="concorda" value="nao" required>
+          Não
+        </label>
+        <span id="termosError" class="error-message">Você deve concordar com os termos.</span>
+      </div>
+
+      <!-- Botão p cadastro -->
+      <button type="submit" id="submitButton">Cadastre-se</button>
+    </form>
+  </div>
+
+  <script src="/js/signup.js"></script>
+</body>
+</html>
