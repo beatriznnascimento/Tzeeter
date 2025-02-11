@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tzeeter</title>
+    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <div class="layout">
+      
+        <!-- Barra lateral -->
+        <div class="barra-lateral">
+            <img src="/img/tiziu.png" alt="logotipo do Tzeeter" class="logo">
+            <ul class="navegacao">
+                <li><a href="/"><img src="/img/house-door.svg">Home</a></li>
+                <li><a href="/"><img src="/img/hash.svg">Explore</a></li>
+                <li><a href="/"><img src="/img/bell.svg">Notifications</a></li>
+                <li><a href="/"><img src="/img/envelope.svg">Messages</a></li>
+                <li><a href="/"><img src="/img/person-fill.svg">Profile</a></li>
+                <li><a href="/"><img src="/img/three-dots.svg">More</a></li>
+            </ul>
+            <div class="container-button">
+                <button id="b_tzeet" onclick="document.getElementById('modal-tzeet').showModal()">Tzeet</button>
+            </div>
+        </div>
+
+        <!-- Conteúdo principal -->
+        <div class="conteudo-principal">
+            <header class="cabecalho-perfil">
+                <img src="img/profile.jpg" alt="Beatriz Nascimento" class="foto-perfil">
+                <div>
+                    <h4>Beatriz Nascimento</h4>
+                    <h5>@beatriznascimento</h5>
+                    <button id="b_tzeet">Edit profile</button>
+                </div>
+            </header>
+
+            <p class="bio">Information Systems Student @ Federal University of Ceará</p>
+            <ul class="infos">
+                <li><a href="/"><img src="/img/geo-alt.svg">Quixadá</a></li>
+                <li><a href="/"><img src="/img/calendar3.svg">Joined in December 2024</a></li>
+            </ul>
+            <ul class="estatisticas">
+                <li><a href="/"><span>10</span> following</a></li>
+                <li><a href="/"><span>10</span> followers</a></li>
+            </ul>
+
+            <div class="pub">
+                <a href="/">Tzeets</a>
+                <a href="/">Tzeets & replies</a>
+                <a href="/">Media</a>
+                <a href="/">Likes</a>
+            </div>
+
+            <article class="tzeet">
+                <p class="user">
+                <img src="https://pcdob.org.br/wp-content/uploads/2021/06/Atila_Iamarino.jpg" alt="Atila Iamarino" width="30" height="30" class="user-image"> 
+                    Atila Iamarino <span>@oatila</span> <span>Oct 21, 2021</span>
+                </p>
+                <p id="tzeet">Se vai furar orçamento, dá pra voltar a financiar absorvente e a ciência? Ou só voto mesmo?</p>
+                <div class="acoes">
+                    <a class="reply" href="/"><img src="/img/chat.svg">150</a>
+                    <a class="retzeet" href="/"><img src="/img/arrow-repeat.svg">50</a>
+                    <a class="like" href="/"><img src="/img/heart.svg">200</a>
+                    <a class="share" href="/"><img src="/img/upload.svg">Share</a>
+                </div>
+            </article>
+
+            <hr class="separador">
+
+            <article class="tzeet">
+                <p class="user">
+                    <img src="/img/profile.jpg" alt="Beatriz Nascimento" class="user-image"> 
+                    Beatriz Nascimento <span>@beatriznascimento</span> <span>Dec 21, 2024</span>
+                </p>
+                <p id="tzeet">Tô amando o recesso :D</p>
+                <div class="acoes">
+                    <a class="reply" href="/"><img src="/img/chat.svg">150</a>
+                    <a class="retzeet" href="/"><img src="/img/arrow-repeat.svg">50</a>
+                    <a class="like" href="/"><img src="/img/heart.svg">200</a>
+                    <a class="share" href="/"><img src="/img/upload.svg">Share</a>
+                </div>
+            </article>
+        </div>
+
+        <!-- Coluna da direita -->
+        <div class="coluna-direita">
+         
+            <div class="caixa-pesquisa">
+                <img src="/img/search.svg" alt="Buscar" width="20">
+                <input type="text" placeholder="Procurar no Tzeeter">
+            </div>
+
+        
+            <div class="sugestoes">
+                <h4>Talvez você curta</h4>
+                <div class="sugestao">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2919/2919906.png" alt="Carlos" width="48" height="48">
+                    <div>
+                        <p><a href="#">Carlos</a></p>
+                        <button>Seguir</button>
+                    </div>
+                </div>
+                <div class="sugestao">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2920/2920072.png" alt="Maria" width="48" height="48">
+                    <div>
+                        <p><a href="#">Maria</a></p>
+                        <button>Seguir</button>
+                    </div>
+                </div>
+                <a href="/" class="mostrar-mais">Mostrar mais</a>
+            </div>
+        </div>
+    </div>    
+    
+    <!-- Modal de Envio de Tzeet  -->
+    <dialog id="modal-tzeet">
+        <div class="modal-content">
+            <button class="close-modal" onclick="document.getElementById('modal-tzeet').close()" aria-label="Fechar modal">&times;</button>
+            <div class="tzeet-form">
+                <img src="img/profile.jpg" alt="Foto de Perfil" class="user-image">
+                <div class="tzeet-area">
+                    <textarea id="modal-tzeet-input" placeholder="O que você está pensando?" maxlength="180"></textarea>
+                    <div class="acoes-tzeet">
+                        <div class="multimedia">
+                            <a href="#" class="icon"><img src="/img/image-fill.svg" alt="Foto"></a>
+                            <a href="#" class="icon"><img src="/img/filetype-gif.svg" alt="GIF"></a>
+                            <a href="#" class="icon"><img src="/img/bar-chart.svg" alt="Enquete"></a>
+                            <a href="#" class="icon"><img src="/img/emoji-smile.svg" alt="Emoji"></a>
+                            <a href="#" class="icon"><img src="/img/calendar-event.svg" alt="Agendar"></a>
+                            <a href="#" class="icon"><img src="/img/geo-alt.svg" alt="Localização"></a>
+                        </div>
+                        <div class="status-envio">
+                            <span id="modal-contador"></span>
+                            <span class="separador">|</span>
+                            <a href="#" class="adicionar-tzeet">
+                                <img src="/img/plus-circle.svg" alt="Adicionar Tzeet">
+                            </a>
+                            <button id="modal-enviar-btn" disabled>Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    
+    <script src="/js/modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,462 @@
+body {
+    background-color: rgb(239, 243, 244); 
+    color: rgb(15, 20, 25);
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    color: rgb(15, 20, 25);
+    text-decoration: none;
+}
+
+.foto-perfil {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+
+.logo {
+    padding: 8px;
+    height: 32px;
+}
+
+.navegacao li a {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.navegacao li a:hover {
+    background-color: rgba(15, 25, 20, 0.1);
+    border-radius: 10px;
+}
+
+.navegacao li {
+    width: 100%;
+}
+
+.navegacao li a img {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+}
+
+.container-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#b_tzeet {
+    background-color: #1266F8;
+    color: white;
+    border-radius: 50px;
+    padding: 6px 32px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 20% 1fr 25%;
+    gap: 20px;
+    height: 100vh;
+}
+
+.barra-lateral {
+    background-color: white; 
+    padding: 20px;
+    border-radius: 8px; 
+    gap: 32px;
+}
+
+.conteudo-principal {
+    background-color: white; 
+    padding: 20px;
+    border-radius: 8px; 
+}
+
+.acoes a {
+    color: rgb(83, 100, 113);
+    border-radius: 10px;
+}
+
+.acoes .reply:hover,
+.acoes .share:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+    color: rgba(29, 155, 240, 1);
+}
+
+.acoes .retzeet:hover {
+    background-color: rgba(0, 186, 124, 0.1);
+    color: rgba(0, 186, 124, 1);
+}
+
+.acoes .like:hover {
+    background-color: rgba(249, 24, 128, 0.1);
+    color: rgba(249, 24, 128, 1);
+}
+
+.coluna-direita {
+    background-color: white; 
+    padding: 20px;
+    border-radius: 8px; 
+}
+
+.caixa-pesquisa {
+    display: flex;
+    align-items: center;
+    background-color: rgb(239, 243, 244); 
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+.caixa-pesquisa img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.caixa-pesquisa input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 14px;
+    color: rgb(15, 20, 25);
+}
+
+.sugestoes {
+    background-color: rgb(239, 243, 244); 
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.sugestoes h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sugestao {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.sugestao-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.sugestao-details {
+    flex-grow: 1;
+}
+
+.sugestao-details p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sugestao-details button {
+    background-color: #1266F8;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.sugestao-details button:hover {
+    background-color: #0b55cc;
+}
+
+.mostrar-mais {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #1266F8;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.mostrar-mais:hover {
+    text-decoration: underline;
+}
+
+.tzeet-form {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.tzeet-area {
+    width: 100%;
+}
+
+#tzeet-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: rgb(239, 243, 244);
+    resize: none;
+    font-size: 16px;
+    color: rgb(15, 20, 25);
+    margin-bottom: 10px;
+}
+
+.multimedia {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.icon img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.icon img:hover {
+    border-radius: 4px;
+    background-color: rgba(158, 158, 158, 0.1);
+    width: 22px;
+    height: 22px;
+}
+
+.status-envio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#contador {
+    font-size: 14px;
+}
+
+#contador.warning {
+    color: rgb(255, 200, 0);
+}
+
+#contador.exceeded {
+    color: rgb(255, 0, 0);
+}
+
+.adicionar-tzeet img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.adicionar-tzeet:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#enviar-btn {
+    background-color: #1266F8;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#enviar-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.acoes-tzeet {
+    display: flex;
+    flex-direction: row;
+    width: 100%;   
+}
+
+.tzeet {
+    padding: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.user-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.user-handle, .tzeet-date {
+    color: rgb(83, 100, 113);
+    font-size: 14px;
+}
+
+.tzeet-content {
+    margin: 8px 0;
+}
+
+.acoes {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.acoes a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: rgb(83, 100, 113);
+}
+
+.acoes a img {
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width: 768px) {
+
+    .layout {
+        grid-template-columns: 1fr; 
+        gap: 10px; 
+    }
+
+    
+    .barra-lateral {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    .navegacao {
+        width: 100%; 
+        gap: 15px; 
+        align-items: flex-start; 
+    }
+
+    .navegacao li {
+        display: flex;
+        align-items: center; 
+        gap: 10px; 
+        font-size: 16px;
+    }
+
+    .navegacao img {
+        width: 20px; 
+        height: 20px;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px; 
+        margin-bottom: 20px;
+    }
+
+    #b_tzeet {
+        width: 100%; 
+        text-align: center;
+        margin-top: 10px;
+        padding: 8px 0;
+    }
+
+    /* Ajustando o conteúdo principal */
+    .conteudo-principal {
+        padding: 10px; 
+    }
+
+    .cabecalho-perfil {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center; 
+    }
+
+    .imagem-perfil {
+        width: 64px;
+        height: 64px; 
+    }
+
+    /* Ajustando a coluna da direita */
+    .coluna-direita {
+        padding: 10px; 
+
+    }
+
+    .caixa-pesquisa {
+        width: 100%; 
+        flex-direction: row; 
+        padding: 5px 10px;
+        gap: 10px; 
+    }
+
+    .sugestoes {
+        padding: 10px; 
+    }
+
+    .sugestao {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .sugestao img {
+        margin-bottom: 10px; 
+    }
+
+    .sugestao button {
+        width: 100%; 
+    }
+
+    .mostrar-mais {
+        font-size: 12px; 
+    }
+
+    /* Ajustando os tzeets */
+    .pub {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .tzeet {
+        padding: 10px; 
+    }
+
+    .acoes {
+        justify-content: center;
+        gap: 15px; 
+    }
+}
