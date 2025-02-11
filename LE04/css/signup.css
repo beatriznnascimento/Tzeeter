@@ -1,0 +1,99 @@
+body {
+    background-color: #dce5ee; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+}
+  
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 100px;
+}
+  
+.form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.input-group {
+    margin-bottom: 15px;
+}
+  
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+} 
+
+.date-group {
+    display: flex;
+    gap: 10px;
+}
+  
+.date-group select {
+    flex: 1;
+}
+  
+.input-group p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+  
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+.input-group input[type="checkbox"],
+.input-group input[type="radio"] {
+    margin-right: 10px;
+}
+  
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+}
+ 
+button:hover {
+    background-color: #0056b3;
+}
+  
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+    margin-top: 5px;
+}
